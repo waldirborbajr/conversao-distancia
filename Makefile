@@ -12,10 +12,10 @@ latestpip:
 	docker push waldirborbajr/conversao-distancia:latest
 
 build:
-	docker build -t waldirborbajr/conversao-distancia:v0.2.1 -f Dockerfile .
+	docker build -t waldirborbajr/conversao-distancia:v0.2.3 -f Dockerfile .
 
 run:
-	docker container run -d -p 8181:5000 waldirborbajr/conversao-distancia:v0.2.1
+	docker container run -d -p 8181:5000 waldirborbajr/conversao-distancia:v0.2.3
 
 prune:
 	docker image prune
@@ -24,10 +24,10 @@ login:
 	docker login
 
 push:
-	docker push waldirborbajr/conversao-distancia:v0.2.1
+	docker push waldirborbajr/conversao-distancia:v0.2.3
 
 latest:
-	docker tag waldirborbajr/conversao-distancia:v0.2.1 waldirborbajr/conversao-distancia:latest
+	docker tag waldirborbajr/conversao-distancia:v0.2.3 waldirborbajr/conversao-distancia:latest
 	docker push waldirborbajr/conversao-distancia:latest
 
 online:
